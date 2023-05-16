@@ -32,5 +32,23 @@ public class Conta{
     public void setSenha(String senha){
         this.senha=senha;
     }
-    
+
+  public Conta(String nome, int idade, String username, String senha){
+    this.nome=nome;
+    this.idade=idade;
+    this.username=username;
+    this.senha=senha;
+  }
+    //Usuario = new Usuario("Leonardo",17,"LeoValle","Lele1234");
+  public Conta (){
+
+  }
+
+  public boolean verificarSenha(String senha){
+        return this.senha.equals(senha);
+  }
+
+  public void alterarSenha(String novaSenha){
+        this.senha = novaSenha;
+  }
 }
